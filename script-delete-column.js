@@ -1,5 +1,6 @@
 // ●	remove columns from the grid
-const colParent=document.querySelectorAll('.row')
+// const colParent=document.querySelectorAll('.row')
+const colParent=document.querySelector('.row')
 $( ".del-col" ).click(function() {
     
     console.log("delete column button clicked");
