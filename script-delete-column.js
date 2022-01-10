@@ -1,10 +1,11 @@
 // ●	remove columns from the grid
 // const colParent=document.querySelectorAll('.row')
-const colParent=document.querySelector('.row')
-$( ".del-col" ).click(function() {
-    
-    console.log("delete column button clicked");
- console.log(colParent)
-     colParent.removeChild(colParent.lastElementChild) 
-    // $( ".mt-5" ).find( colParent.lastElementChild).removeChild();
-  })
+const colParent = document.querySelectorAll('.row')
+const rowParent = document.querySelector('.mt-5')
+$(".del-col").click(function () {
+
+  console.log("delete column button clicked");
+
+  $("div.row div.col-sm:last-child").remove()
+
+})
