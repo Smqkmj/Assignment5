@@ -1,11 +1,13 @@
 
 // ●	add rows to the grid
-const rowParent=document.querySelector('div.mt-5')
-$( ".add-row" ).click(function() {
+const rowParent = document.querySelector('div.mt-5')
+const newRow = document.createElement("div")
+$(".add-row").click(function () {
 
-  rowParent.removeChild(rowParent.lastElementChild) 
-    console.log("add row button clicked");
-  });
+  console.log("add row button clicked");
+
+  $("div.row:last-child").clone().appendTo(".mt-5");
+});
 
 // ●	select a color from a dropdown menu of colors
 // ●	click on a single cell, changing its color to the currently selected color
