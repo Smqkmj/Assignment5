@@ -1,8 +1,5 @@
 
-// ●	add rows to the grid
 
-const rowParent = document.querySelector('div.mt-5')
-const newRow = document.createElement("div")
 $(".add-row").click(function () {
 
   console.log("add row button clicked");
