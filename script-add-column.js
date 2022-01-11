@@ -1,16 +1,16 @@
 
-// ●	add rows to the grid
-
-const rowParent = document.querySelector('div.mt-5')
-const newRow = document.createElement("div")
-$(".add-row").click(function () {
-
-  console.log("add row button clicked");
-
-  $("div.row:last-child").clone().appendTo(".mt-5");
-});
-
-
+// ●	add columns to the grid
+const firstColChild=document.querySelector('div.col-sm')
+$( ".add-col" ).click(function() {
+    
+    console.log("add column button clicked");
+    $(firstColChild).clone().appendTo("div.row");
+  //  console.log($('.row'))
+   // rowParent.removeChild(rowParent.lastElementChild) 
+   // $("div.row div.col-sm:last-child").remove()
+  });
+// ●	remove rows from the grid
+// ●	remove columns from the grid
 // ●	select a color from a dropdown menu of colors
 // ●	click on a single cell, changing its color to the currently selected color
 // ●	fill all uncolored cells with the currently selected color
