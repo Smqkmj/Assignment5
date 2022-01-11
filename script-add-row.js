@@ -1,5 +1,6 @@
 
 // ●	add rows to the grid
+
 const rowParent = document.querySelector('div.mt-5')
 const newRow = document.createElement("div")
 $(".add-row").click(function () {
@@ -8,6 +9,7 @@ $(".add-row").click(function () {
 
   $("div.row:last-child").clone().appendTo(".mt-5");
 });
+
 
 // ●	select a color from a dropdown menu of colors
 // ●	click on a single cell, changing its color to the currently selected color
